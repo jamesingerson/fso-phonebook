@@ -1,0 +1,27 @@
+GET http://localhost:3001/api/persons/
+
+###
+
+GET http://localhost:3001/info
+
+###
+
+GET http://localhost:3001/api/persons/32505227
+
+###
+
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Testing Purposes",
+  "number": "041-9483575"
+}
+
+###
+
+GET http://localhost:3001/unknown/end/point/
+
+###
+
+DELETE http://localhost:3001/api/persons/2
