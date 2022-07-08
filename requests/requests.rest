@@ -14,7 +14,7 @@ POST http://localhost:3001/api/persons/ HTTP/1.1
 content-type: application/json
 
 {
-  "name": "Testing Purposes",
+  "name": "Miss Testing Purposes",
   "number": "041-9483575"
 }
 
@@ -24,4 +24,14 @@ GET http://localhost:3001/unknown/end/point/
 
 ###
 
-DELETE http://localhost:3001/api/persons/2
+DELETE http://localhost:3001/api/persons/62c7bbab2a6c827ea4ef9dda
+
+###
+
+PUT http://localhost:3001/api/persons/62c778538b7097455a33ae90 HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Mi",
+  "number": "041-9483575"
+}
